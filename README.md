@@ -25,9 +25,6 @@ graph LR
   end
 
   style J_C fill:#FF6C6C
-  style MQTT_P fill:#6C79FF
-  style FS_C fill:#FF6C6C
-  style SC fill: #F89347
   style JR fill: #F89347
   style O fill:#F89347
   style A fill:#F89347
