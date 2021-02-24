@@ -1,6 +1,6 @@
 <service-test>
   <unique-id>boring-keller</unique-id>
-  <test-client class="local-jmx-test-client"/>
+  <test-client class="embedded-jmx-test-client"/>
   <helpers/>
   <test-list>
     <unique-id>mongodb-api</unique-id>
