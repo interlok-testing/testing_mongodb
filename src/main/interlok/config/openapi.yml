@@ -1,0 +1,89 @@
+openapi: 3.0.1
+servers: []
+info:
+  version: "1.0.0"
+  title: Swagger Petstore
+tags:
+  - name: mongodb
+  - name: elastic
+paths:
+  /api/mongodb:
+    post:
+      tags:
+        - mongodb
+      summary: Add a new entry in mongodb
+      operationId: addMongodb
+      responses:
+        '405':
+          description: Invalid input
+    put:
+      tags:
+        - mongodb
+      summary: Update an existing entry
+      operationId: updateMongodb
+      responses:
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Entry not found
+        '405':
+          description: Validation exception
+    get:
+      tags:
+        - mongodb
+      summary: List all entries
+      description: Returns all entries
+      operationId: getAllMongodb
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+  '/api/mongodb/{id}':
+    get:
+      tags:
+        - mongodb
+      summary: Find entry by ID
+      description: Returns a single entry
+      operationId: getMongodb
+      parameters:
+        - name: id
+          in: path
+          description: ID of entry to return
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Entry not found
+    delete:
+      tags:
+        - mongodb
+      summary: Deletes an entry in mongodb
+      operationId: deleteMongodb
+      parameters:
+        - name: id
+          in: path
+          description: Entry id to delete
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Entry not found
