@@ -2,10 +2,9 @@ openapi: 3.0.1
 servers: []
 info:
   version: "1.0.0"
-  title: Swagger Petstore
+  title: Swagger MongoDB API
 tags:
   - name: mongodb
-  - name: elastic
 paths:
   /api/mongodb:
     post:
