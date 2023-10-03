@@ -1,5 +1,8 @@
 # MongodDB Testing
 
+[![license](https://img.shields.io/github/license/interlok-testing/testing_mongodb.svg)](https://github.com/interlok-testing/testing_mongodb/blob/develop/LICENSE)
+[![Actions Status](https://github.com/interlok-testing/testing_mongodb/actions/workflows/gradle-build.yml/badge.svg)](https://github.com/interlok-testing/testing_mongodb/actions/workflows/gradle-build.yml)
+
 Project tests interlok-mongo-db, interlok-varsub, interlok-json features
 
 ## What it does
@@ -9,6 +12,7 @@ This project has a single workflow that implements a simple rest api to manage (
 ```mermaid
 graph LR
   subgraph Mongod DB API
+    direction LR
     J_C(Jetty Consumer) --> JR(Jetty Router)
     JR --> O[Open API]
     O --> R[Response]
@@ -33,7 +37,6 @@ graph LR
   style G fill:#F89347
   style L fill:#F89347
   style R fill:#F89347
-
 ```
 
 

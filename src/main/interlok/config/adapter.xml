@@ -429,7 +429,6 @@
           <producer class="null-message-producer">
             <unique-id>thirsty-ramanujan</unique-id>
           </producer>
-          <produce-exception-handler class="null-produce-exception-handler"/>
           <unique-id>mongodb-api</unique-id>
           <message-metrics-interceptor>
             <unique-id>mongodb-api-MessageMetrics</unique-id>
