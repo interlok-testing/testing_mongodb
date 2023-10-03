@@ -93,8 +93,8 @@ You can call the api with the following curl commands:
 
 ### Add an entry
 
-`curl --location --request POST 'http://localhost:8080/api/mongodb' \
---header 'Content-Type: text/plain' \
+`curl --location --request POST 'http://localhost:8080/api/mongodb'
+--header 'Content-Type: text/plain'
 --data-raw '{
     "username":"username",
     "firstName":"firstName",
@@ -104,8 +104,8 @@ You can call the api with the following curl commands:
 
 ### Update an entry
 
-`curl --location --request PUT 'http://localhost:8080/api/mongodb' \
---header 'Content-Type: text/plain' \
+`curl --location --request PUT 'http://localhost:8080/api/mongodb'
+--header 'Content-Type: text/plain'
 --data-raw '{
     "username":"username",
     "firstName":"firstName",
